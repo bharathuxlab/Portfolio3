@@ -1,0 +1,502 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Styles for the navigation bar */
+/* Styles for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 277px 10px; /* Remove the top padding, keep left-right padding and bottom padding */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent; /* Make the background transparent */
+}
+
+.nav-logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain; /* Ensures the image fits within the dimensions without being distorted */
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+}
+
+.nav-logo:hover {
+    transform: scale(1.3); /* Scale up by 10% on hover */
+}
+
+.nav-links {
+    display: flex;
+    gap: auto; /* Creates automatic spacing between links */
+    justify-content: flex-end; /* Aligns links to the right */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.chevron-icon {
+    width: 12px;
+    height: 12px;
+    margin-left: 4px; /* 4px gap between text and chevron icon */
+}
+
+.chevron-icon {
+    width: 12px; /* Adjust the size of the chevron as needed */
+    height: 12px;
+    margin-left: 4px; /* 4px gap between text and chevron icon */
+}
+
+.chevron-icon {
+    width: 12px; /* Adjust the size of the chevron as needed */
+    height: 12px;
+    margin-left: 4px; /* 4px gap between text and chevron icon */
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.nav-link:hover {
+    transform: scale(1.3); /* Scale up by 10% when hovered */
+}
+
+.nav-link img.chevron-icon {
+    margin-left: 8px; /* Space between text and chevron */
+    transition: transform 0.3s ease; /* Optional: Smooth transition for chevron icon as well */
+}
+
+.nav-link:hover img.chevron-icon {
+    transform: translateX(5px); /* Optionally move chevron icon on hover */
+}
+
+
+
+
+body { background: #000; color: #fff; 
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; 
+    overflow-x: hidden; scroll-behavior: smooth; }
+
+
+/* Hero Section: Apply transition on hover */
+.hero-content {
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.hero-content:hover {
+    transform: scale(4.05); /* Scale up by 5% on hover */
+}
+
+/* Optional: Apply smooth transition to the text (h1 and p) as well */
+.hero-content h1,
+.hero-content p {
+    transition: transform 0.3s ease; /* Optional smooth transition for text */
+}
+
+.hero-content:hover h1 {
+    transform: translateY(-40px); /* Slightly move the heading up */
+}
+
+.hero-content:hover p {
+    transform: translateY(-3px); /* Slightly move the paragraph up */
+}
+
+
+
+
+
+
+
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ddd;
+ 
+}
+
+/* Image under Innovative Solutions for the Future, between h2 and p */
+.image-container {
+    margin-top: 4px;
+    text-align: center;
+}
+
+/* Styling for the scroll button */
+.cta {
+    background-color: #0076ff;  /* Blue background */
+    color: white;               /* White text */
+    padding: 18px;               /* 8px padding */
+    border: none;               /* Removes default button border */
+    border-radius: 8px;         /* Rounded corners */
+    font-size: 16px;            /* Font size for readability */
+    font-weight: semibold;          /* Makes the text bold */
+    cursor: pointer;           /* Adds a pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+
+    
+}
+
+.cta:hover {
+    background-color: #005bb5;  /* Darker blue on hover */
+}
+
+/* Remove underline from the anchor tag */
+a.cta {
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the link behave like a button */
+    padding: 10px 20px; /* Add some padding for button-like appearance */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: semibold; /* Font weight */
+    text-align: center; /* Center align text */
+}
+
+a.cta:hover {
+    background-color: #0056b3; /* Darker shade when hovering */
+}
+
+
+.section-image {
+    width: 200%;
+    max-width: 800px;  /* Adjust as needed */
+    height: 50px;
+    margin: 0 auto;
+}
+
+
+.phone-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 300px;
+    height: 600px;
+    z-index: 2;
+}
+
+.phone {
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #5e17eb, #4c89ff);
+    opacity: 0.9;
+}
+
+.phone-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease; /* Smooth transition for scaling */
+}
+
+.phone-image:hover {
+    transform: scale(1.5); /* Scale up by 10% on hover */
+}
+
+.notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 30px;
+    background: #000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 2;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.sticky-section {
+    position: relative;
+}
+
+
+.intro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Optional background color */
+}
+
+.feature {
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Styling for the h2 */
+.intro h2 {
+    font-size: 82px;   /* Font size for h2 */
+    font-weight: bold; /* Bold text */
+    color: #333;       /* Dark text color */
+    margin-bottom: 20px; /* Spacing below the header */
+}
+
+/* Styling for the paragraph */
+.intro p {
+    font-size: 28px;   /* Font size for paragraph */
+    color: #555;       /* Slightly lighter text color */
+    line-height: 1.5;   /* Increased line-height for readability */
+    margin-bottom: 30px; /* Spacing below the paragraph */
+    max-width: 1200px;
+
+
+}
+
+
+.feature {
+    text-align: center;
+    opacity: 1;
+    transform: translateY(50px);
+}
+
+.feature h2 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #fff;
+    opacity: 1;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.feature h2:hover {
+    transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
+.feature p {
+    font-size: 18px;
+    color: #bbb;
+    width: 100%; /* Text fills 60% width */
+
+    padding: 0 20px;
+    margin: 0 auto;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    font-weight: semibold;
+
+}
+
+/* CTA Button Styles */
+.cta-btn {
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+    border: 1px solid #ccc; /* Greyish border */
+    font-size: 14px;
+    padding: 8px 8px;
+    border-radius: 0px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    background: #222; /* Darker black on hover */
+    border: 2px solid #bbb; /* Slightly lighter grey border on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 767px) {
+    .phone-container {
+        width: 200px;
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .feature h2 {
+        font-size: 30px;
+    }
+
+    .feature p {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-line {
+    width: 2px;
+    height: 60px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.scroll-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    animation: scrollDown 1.5s infinite;
+}
+
+.scroll-dot {
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+
+
+/* Particles Style */
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Make sure particles are not clickable */
+    z-index: 10;
+}
+
+/* Particle Hover Effect */
+#particles:hover {
+    background: linear-gradient(45deg, #ff6ec7, #ffcc00, #48c6ef);
+    animation: colorChange 2s infinite alternate;
+}
+
+/* Hover animation for the gradient */
+@keyframes colorChange {
+    0% {
+        background: linear-gradient(45deg, #ff6ec7, #ffcc00, #48c6ef);
+    }
+    100% {
+        background: linear-gradient(45deg, #6a11cb, #2575fc, #f7d200);
+    }
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+
+
+    
+
+
+    
+}
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
